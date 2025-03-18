@@ -390,7 +390,21 @@ print(intersection([1, 6, 2, 4], [2, 7, 6]))
 :name: ex4.3
 Écrivez une fonction qui prenne deux listes en entrée et retourne l'union des deux listes (c'est-à-dire une liste contenant tous les éléments présents dans au moins une des deux listes) sans doublon.
 ```
+###correction
+```
+def intersection(l1,l2):
+    l3=[]
+    for e in l1:
+        if e in l2:
+            l3.append(e)
+    return l3
 
+
+
+
+l1=[2,4,5,2,7,6]
+l2=[5,8,2,3,2]
+print("A inter B ", intersection(l1,l2))
 <div id="pad_4.3" class="pad"></div>
 <script>
     Pythonpad('pad_4.3', 
